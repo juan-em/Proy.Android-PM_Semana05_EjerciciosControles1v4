@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PAR O IMPAR"
+        android:textAlignment="center"
+        android:textSize="40sp"
+        android:textColor="#FFB61B"
+        android:background="#DF0909"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ingrese un numero:"
+        android:textSize="35sp"
+        android:background="#0CA9D8"
+        android:textColor="@color/white"/>
+
+    <EditText
+        android:id="@+id/txtNumero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnEvaluar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Evaluar"
+        android:background="@color/black"
+        android:textColor="#0CA9D8"
+        android:textSize="35sp"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Resultado:"
+        android:textSize="35sp"
+        android:background="#0CA9D8"
+        android:textColor="@color/white"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RadioButton
+            android:id="@+id/radioPar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Par" />
+
+        <RadioButton
+            android:id="@+id/radioImpar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Impar" />
+    </RadioGroup>
+
+</LinearLayout>
